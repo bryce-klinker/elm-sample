@@ -15,5 +15,8 @@ suite =
 
             , test "II plus I should be III" <|
                 \_ -> addRomanNumerals "II" "I" |> Expect.equal "III"
+
+            , test "III plus I should be IV" <|
+                \_ -> addRomanNumerals "III" "I" |> Expect.equal "IV"
         ]
 
